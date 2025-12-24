@@ -1,0 +1,43 @@
+# Кеш и временные
+cache/
+tmp/
+logs/
+backup/
+backups/
+images/
+
+# Данные
+user/data/*
+
+# Системные
+.DS_Store
+*.log
+
+# Vendor
+vendor/
+node_modules/
+
+# ВСЕ плагины (устанавливаются через GPM)
+user/plugins/*
+
+# Исключение: разрешаем только конфиги плагинов
+!user/plugins/.gitkeep
+
+# Конфиг Git Sync (СОДЕРЖИТ ТОКЕН!)
+user/config/plugins/git-sync.yaml
+
+# Плагин с API ключами
+user/config/plugins/smartcaptcha-validator.yaml
+
+# Чувствительные
+user/accounts/
+user/config/security.yaml
+
+# Environment файлы
+.env
+.env.*
+
+# Плагин с API ключами
+user/plugins/smartcaptcha-validator/
+
+robots.txt
